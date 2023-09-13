@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -23,6 +23,8 @@
                </div>
            @endforeach
        </div>
-       <div class="paginate">{{$posts->links()}}</div>
+        <div class='paginate'>
+            {{ $posts->links() }}
+        </div>
     </body>
 </html>
